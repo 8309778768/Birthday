@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MYAPP</title>
+</head>
+<body>
+<div class="row">
+{% for i in posts %}
+    <div class="col-6">
+<b>{{i.description}}</b><br>
+
+
+<img src="{{i.image.url}}" height="300" width="300"><br>
+<br><br>
+</div>
+{% endfor %}
+<br>
+</body>
+</html>
